@@ -30,33 +30,42 @@
   .DHinc_title {
     font-size: 22px;
     margin-left: 40px;
-  }
+    filter: drop-shadow(2px 4px 6px gray);
+}
   .DHinc_desc {
     font-size: 12px;
+    filter: drop-shadow(2px 4px 6px gray);
+}
+  .DHinc_sep {
+    color: #999999;
   }
   .bf_wrap_top_burger_mobile {
     position: fixed;
     top: 8px;
     left: 10px;
     z-index: 9999999;
-  }
+    filter: drop-shadow(2px 4px 6px gray);
+}
 .rc_instagram {
     position: fixed;
     bottom: 118px;
     right: 10px;
     z-index: 9999999;
+    filter: drop-shadow(2px 4px 6px black);
 }
 .rc_facebook {
     position: fixed;
     bottom: 64px;
     right: 10px;
     z-index: 9999999;
+    filter: drop-shadow(2px 4px 6px black);
 }
 .rc_whatsapp {
     position: fixed;
     bottom: 10px;
     right: 10px;
     z-index: 9999999;
+    filter: drop-shadow(2px 4px 6px black);
 }
 .rc_twitter, .rc_youtube {display: none}
 #instafeed {
@@ -66,6 +75,16 @@
   flex-flow: row wrap;
   padding-top: 74px;
   background: ;
+}
+.social_bg {
+  position: fixed;
+      bottom: 0px;
+      right: 0px;
+      width: 56px;
+      height: 170px;
+      background: #dcdcdcde;
+      z-index: 9999999;
+      filter: drop-shadow(2px 4px 26px black);
 }
 .caption {
   text-align: left;
@@ -164,7 +183,7 @@ iframe {
 
 <body>
 
-<div class="dhinc_wrap_top"><span class="DHinc_title">DHinc </span><span class="DHinc_desc"> Señalización | Gráfica | Logos | Letras</span></div>
+<div class="dhinc_wrap_top"><span class="DHinc_title">DHinc </span><span class="DHinc_desc"> Señalización <span class="DHinc_sep">|</span> Gráfica <span class="DHinc_sep">|</span> Logos <span class="DHinc_sep">|</span> Letras</span></div>
 
   <div class="bf_wrap_top_burger_mobile">
             <span class="move_to_bf-menu">
@@ -180,14 +199,15 @@ iframe {
           <div id="instafeed"></div>
           <div class="modal_to_show_enlarged_item"></div>
           <div class="modal_close_it_x">x</div>
+          <div class="social_bg"></div>
             <span class="rc_whatsapp">
       <a target="_blank" href="https://wa.me/541168880447/?text=Hola%20DHInc,%20quisiera%20hacer%20una%20consulta.%20Mi%20nombre%20es:%20"><img src="_whatsapp_logo.png" alt="" width="36" height="36"></a>
     </span>
             <span class="rc_instagram">
-          <a target="_blank" href="https://www.instagram.com/DiarioRedCinco/"><img src="_instagram_logo.png" alt="" width="36" height="36"></a>
+          <a target="_blank" href="https://www.instagram.com/dhinc.graficaycarteleria/"><img src="_instagram_logo.png" alt="" width="36" height="36"></a>
         </span>
             <span class="rc_facebook">
-          <a target="_blank" href="https://www.facebook.com/DiarioRedCinco/"><img src="_facebook_logo.png" alt="" width="36" height="36"></a>
+          <a target="_blank" href="https://www.facebook.com/dhinc.com.ar/"><img src="_facebook_logo.png" alt="" width="36" height="36"></a>
         </span>
             <span class="rc_twitter">
           <a target="_blank" href="https://twitter.com/DiarioRedCinco"><img src="_twitter_logo.png" alt="" width="36" height="36"></a>
