@@ -1,0 +1,269 @@
+<!DOCTYPE HTML>
+<html lang="es-AR" prefix="og: http://ogp.me/ns#" itemscope itemtype="http://schema.org/DefinedTerm">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+  <meta content="no" name="msapplication-tap-highlight">
+
+  <title>DHInc</title>
+
+  <style>
+  html, body {
+    margin: 0 auto;
+    font-family: sans-serif;
+  }
+  .dhinc_wrap_top {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 44px;
+    width: 100vw;
+    font-family: sans-serif;
+    line-height: 44px;
+    text-align: center;
+    z-index: 999999;
+    background: gainsboro;
+        filter: drop-shadow(2px 4px 6px gray);
+  }
+  .DHinc_title {
+    font-size: 22px;
+    margin-left: 40px;
+    filter: drop-shadow(2px 4px 6px gray);
+}
+  .DHinc_desc {
+    font-size: 12px;
+    filter: drop-shadow(2px 4px 6px gray);
+}
+  .DHinc_sep {
+    color: #999999;
+  }
+  .bf_wrap_top_burger_mobile {
+    position: fixed;
+    top: 8px;
+    left: 10px;
+    z-index: 9999999;
+    filter: drop-shadow(2px 4px 6px gray);
+}
+.rc_instagram {
+    position: fixed;
+    bottom: 118px;
+    right: 10px;
+    z-index: 9999999;
+    filter: drop-shadow(2px 4px 6px black);
+}
+.rc_facebook {
+    position: fixed;
+    bottom: 64px;
+    right: 10px;
+    z-index: 9999999;
+    filter: drop-shadow(2px 4px 6px black);
+}
+.rc_whatsapp {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9999999;
+    filter: drop-shadow(2px 4px 6px black);
+}
+.rc_twitter, .rc_youtube {display: none}
+#instafeed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding-top: 74px;
+  background: ;
+}
+.social_bg {
+  position: fixed;
+      bottom: 0px;
+      right: 0px;
+      width: 56px;
+      height: 170px;
+      background: #dcdcdcde;
+      z-index: 9999999;
+      filter: drop-shadow(2px 4px 26px black);
+}
+.caption {
+  text-align: left;
+  font-size: 16px;
+  font-family: ;
+}
+.item {
+  height: auto;
+  width: 312px;
+  padding: 2px;
+  cursor: pointer;
+}
+.item img {
+  display: block;
+  width: 312px;
+  height: auto;
+  border-radius: 0%;
+  border: 0;
+  box-sizing: border-box;
+  -webkit-animation: roll 1.5s 300ms ease both;
+          animation: roll 1.5s 300ms ease both;
+}
+.item.big {
+  width: 90vw;
+  height: auto;
+}
+.item.big img {
+  width: 90vw;
+  height: auto;
+}
+.item.big .like {
+  display: none;
+}
+.item:hover .like {
+  transform: scale(1.1);
+}
+@-webkit-keyframes roll {
+  0% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes roll {
+  0% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.modal_to_show_enlarged_item {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+    bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding-top: 50px;
+  background: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+    font-size: 100px;
+}
+.wrap_iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding-top: 50px;
+  background: ;
+}
+iframe {
+  max-width: 100vw;
+}
+.box_shadow {
+    box-shadow: 0px 0px 60px #111111;
+}
+.modal_close_it_x {
+  position: fixed;
+      top: 38px;
+      right: 12px;
+      font-size: 44px;
+      color: gainsboro;
+      text-align: right;
+      z-index: 100;
+      cursor: pointer;
+}
+  </style>
+
+
+</head>
+
+<body>
+
+<div class="dhinc_wrap_top"><span class="DHinc_title">DHinc </span><span class="DHinc_desc"> Señalización <span class="DHinc_sep">|</span> Gráfica <span class="DHinc_sep">|</span> Logos <span class="DHinc_sep">|</span> Letras</span></div>
+
+  <div class="bf_wrap_top_burger_mobile">
+            <span class="move_to_bf-menu">
+
+              <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 0 24 24" width="28px" fill="#000000">
+                <path d="M0 0h24v24H0V0z" fill="none"></path>
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+              </svg>
+
+            </span>
+          </div>
+
+          <div id="instafeed"></div>
+          <div class="modal_to_show_enlarged_item"></div>
+          <div class="modal_close_it_x">x</div>
+          <div class="social_bg"></div>
+            <span class="rc_whatsapp">
+      <a target="_blank" href="https://wa.me/541168880447/?text=Hola%20DHInc,%20quisiera%20hacer%20una%20consulta.%20Mi%20nombre%20es:%20"><img src="_whatsapp_logo.png" alt="" width="36" height="36"></a>
+    </span>
+            <span class="rc_instagram">
+          <a target="_blank" href="https://www.instagram.com/dhinc.graficaycarteleria/"><img src="_instagram_logo.png" alt="" width="36" height="36"></a>
+        </span>
+            <span class="rc_facebook">
+          <a target="_blank" href="https://www.facebook.com/dhinc.com.ar/"><img src="_facebook_logo.png" alt="" width="36" height="36"></a>
+        </span>
+            <span class="rc_twitter">
+          <a target="_blank" href="https://twitter.com/DiarioRedCinco"><img src="_twitter_logo.png" alt="" width="36" height="36"></a>
+        </span>
+            <span class="rc_youtube">
+          <a target="_blank" href="https://www.facebook.com/RedCincoDiario/"><img src="_youtube_logo.png" alt="" width="36" height="36"></a>
+        </span>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+
+<script>
+$(document).ready(function() {
+
+var userFeed = new Instafeed({
+		get: 'user',
+		target: "instafeed",
+    resolution: 'standard_resolution',
+    sortBy: 'most-recent',
+    limit: 36,
+    links: true,
+		accessToken: 'IGQVJVNUpHSnBZAZAFRIRDZAvdVdpcUhnVHdmdW5qVGVtdzVHdTI4NzBDTXg3Sm42TWwyX3NPN0NBMXlGazhNVWxtSmJzTVQ5RWFoNU5CdjBFMUV0NnZAVUmhLUTVmbDhhS1NxWE5DMFFnQm1sNUVTRjI2dAZDZD&fields=media_url,media_type,caption,permalink',
+    template: '<div class="item"><img src="{{image}}"/><div class="caption">{{caption}}</div><div class="video">{{video}}</div></div>'
+
+	});
+	userFeed.run();
+
+$(".modal_to_show_enlarged_item, .modal_close_it_x").hide();
+
+
+$("#instafeed").on('click', '.item', function(e) {
+var putThisOneInTheModal = $(this).html();
+$(".modal_close_it_x").show();
+$(".modal_to_show_enlarged_item").show().append(putThisOneInTheModal).css("cursor", "normal");
+$(".modal_to_show_enlarged_item").find("img").css("width", "100%").css("max-width", "90vw");
+$(".modal_to_show_enlarged_item").find(".caption").css("color", "gainsboro").css("background", "black").css("padding", "20px").css("width", "100%").css("max-width", "50vw");
+
+if ($(window).width() > 1200) {
+
+ $(".modal_to_show_enlarged_item > img").css("max-width", "1200px");
+
+}
+
+});
+
+$(".modal_to_show_enlarged_item, .modal_close_it_x").on( "click", function() {
+  $(".modal_to_show_enlarged_item").empty().hide();
+  $(".modal_close_it_x").hide();
+});
+
+});
+</script>
+
+<div class="wrap_iframe">
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdPEGZi8GwAElbyZ1PB2B2ugGXipck4ezIncSILHuWdZJZChw/viewform?embedded=true" width="640" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+</body>
+
+</html>
