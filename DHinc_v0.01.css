@@ -791,7 +791,7 @@ body {
   cursor: pointer;
 }
 .fa-bars:hover, .fa-question:hover {
-  background:#c7c7c7;
+  background:#0074ab;
 }
 /* desktop */
 .bf_wrap_top_desktop {
@@ -844,21 +844,22 @@ body {
   display: flex;
   width: 100%;
   max-width:100%;
-  background:#FF5E33;
+  background:white;
   height: 44px;
   color:#ffffff;
 }
 .flex-child {
-    background:#FF5E33;
+    background:#005c88;
     color:#ffffff;
   line-height: 44px;
   white-space: nowrap;
   padding-left: 8px;
   padding-right: 8px;
   cursor: pointer;
+  text-shadow: 1px 1px 0px black;
   }
   .flex-child:hover {
-    background:#c7c7c7;
+    background:#0074ab;
     font-weight: 400;
 }
 .flex_space_between {
@@ -1442,14 +1443,15 @@ a.link_to_youtube_channel:focus {
     }
     .padding_left_10px {
       color: #ffffff;
-      background:#FF5E33;
+      background:#005c88;
       cursor: pointer;
       text-align: center;
       font-size: 18px;
       margin: 4px;
+      text-shadow: 1px 1px 0px black;
     }
     .padding_left_10px:hover {
-      background:#c7c7c7;
+      background:#0074ab;
     }
 .bf_intro_logo {
   position: absolute;
