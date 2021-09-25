@@ -781,7 +781,6 @@ body {
       align-items: center;
       background: ;
       cursor: pointer;
-      filter: drop-shadow(2px 4px 12px gray);
 }
 
 
@@ -1045,7 +1044,6 @@ body {
 .swiper-button-next, .swiper-button-prev {
   top: calc(100% - 44px - 4px) !important;
   cursor: pointer;
-  filter: drop-shadow(2px 4px 12px gray);
 }
 .swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after,
 .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {display: none !important}
